@@ -1,0 +1,97 @@
+﻿@import url('reset.css');
+
+body {
+    background-color: gainsboro;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.wrapper {
+    background-color: white;
+    width: 540px;
+    margin: 100px auto;
+    padding: 10px 15px;
+}
+
+.content-wrapper {
+    border: 1px solid white;
+    padding: 0 30px;
+    outline: solid 1px gainsboro;
+    background: linear-gradient(top, gainsboro -5%, white 15%);
+    background: -ms-linear-gradient(top, gainsboro -5%, white 15%);
+    background: -moz-linear-gradient(top, gainsboro -5%, white 15%);
+    background: -webkit-linear-gradient(top, gainsboro -5%, white 15%);
+}
+
+header {
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 0;
+}
+
+    header h1 {
+        display: inline-block;
+        font-size: 32px;
+        color: #21759B;
+    }
+
+    header h3 {
+        padding-top: 10px;
+        font-weight: 600;
+        float: right;
+        color: #575757;
+    }
+p {
+    line-height: 1.5;
+}
+article {
+    clear: both;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0;
+}
+
+    article p {
+        padding: 10px 0;
+    }
+
+footer {
+    position: relative;
+    padding: 15px 0;
+    font-size: 11px;
+    font-weight: 300;
+    color: #888;
+}
+
+.icon:before {
+    content: '';
+    background: white url('images/sprite0.png') no-repeat;
+    position: relative;
+    display: inline-block;
+    left: -2px;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+}
+
+.icon-big:before {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 445px;
+    top: 15px;
+}
+
+.icon-calendar:before {
+    background-position: -41px -1px;
+}
+
+.icon-massage:before {
+    background-position: -61px -1px;
+}
+
+.icon-wordpress {
+    background-position: -1px 0;
+}
+
+.email-color{
+    color: #25779c;
+}
