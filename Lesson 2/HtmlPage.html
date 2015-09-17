@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container center-block">
+        <div class="row">
+            <form action="" method="get" target="_blank" class="form-horizontal">
+                <div class="page-header text-center text-primary">
+                    <h1><strong>Регистрация</strong></h1>
+                </div>
+
+                <!--ФИО-->
+
+                <div class="form-group">
+                    <label for="LastName" class="col-sm-2 col-sm-offset-3 control-label">Фамилия*</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Name" class="form-control" id="LastName" placeholder="Иванов" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="FirsttName" class="col-sm-2 col-sm-offset-3 control-label">Имя*</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Name" class="form-control" id="FirsttName" placeholder="Иван" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Patronymic" class="col-sm-2 col-sm-offset-3 control-label">Отчество*</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Name" class="form-control" id="Patronymic" placeholder="Иванович" required="required" />
+                    </div>
+                </div>
+
+                <!--Логин/пароль-->
+
+                <div class="form-group">
+                    <label for="Login" class="col-sm-2 col-sm-offset-3 control-label">Логин*</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Login" class="form-control" id="Login" placeholder="" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Password" class="col-sm-2 col-sm-offset-3 control-label">Пароль*</label>
+                    <div class="col-sm-3">
+                        <input type="password" name="Password" class="form-control" id="Password1" placeholder="" required="required" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Password" class="col-sm-2 col-sm-offset-3 control-label">Повторите пароль*</label>
+                    <div class="col-sm-3">
+                        <input type="password" name="Password" class="form-control" id="Password2" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required" />
+                    </div>
+                </div>
+
+                <!--e-mail-->
+
+                <div class="form-group">
+                    <label for="EMail" class="col-sm-2 col-sm-offset-3 control-label">E-mail адрес*</label>
+                    <div class="col-sm-3">
+                        <input type="email" name="Email" class="form-control" id="EMail" placeholder="ivan@domen.com" title="Веденный e-mail должен содержать строчные буквы или цифры, собаку и доменное имя, записанное через точку" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)" required="required" />
+                    </div>
+                </div>
+
+                <!--Адрес-->
+
+                <div class="form-group">
+
+                    <label for="Adress" class="col-sm-2 col-sm-offset-3 control-label">Адрес</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Adress" class="form-control" id="Adress" required="required" />
+                        <small class="help-block">Город*</small>
+                    </div>
+
+                    <label for="Adress" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Adress" class="form-control" id="Adress" />
+                        <small class="help-block">Индекс</small>
+                    </div>
+
+                    <label for="Adress" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3">
+                        <select name="Region" class="form-control">
+                            <option value="">Выберите регион</option>
+                            <option value="">Винницкая область</option>
+                            <option value="">Волынская область</option>
+                            <option value="">Днепропетровская область</option>
+                            <option value="">Донецкая область</option>
+                            <option value="">Житомирская область</option>
+                            <option value="">Закарпатская область</option>
+                            <option value="">Запорожская область</option>
+                            <option value="">Ивано- Франковская область</option>
+                            <option value="">Киевская область</option>
+                            <option value="">Кировоградская область</option>
+                            <option value="">Крым</option>
+                            <option value="">Луганская область</option>
+                            <option value="">Львовская область</option>
+                            <option value="">Николаевская область</option>
+                            <option value="">Одесская область</option>
+                            <option value="">Полтавская область</option>
+                            <option value="">Ровенская область</option>
+                            <option value="">Сумская область</option>
+                            <option value="">Тернопольская область</option>
+                            <option value="">Харьковская область</option>
+                            <option value="">Херсонская область</option>
+                            <option value="">Хмельницкая область</option>
+                            <option value="">Черкасская область</option>
+                            <option value="">Черниговская область</option>
+                            <option value="">Черновицкая область</option>
+                        </select>
+                        <small class="help-block">Область</small>
+                    </div>
+
+                    <label for="Adress" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Adress" class="form-control" id="Adress" />
+                        <small class="help-block">Улица</small>
+                    </div>
+                    <label for="Adress" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3">
+                        <input type="text" name="Adress" class="form-control" id="Adress" />
+                        <small class="help-block">Номер дома</small>
+                    </div>
+                </div>
+
+                <!--Ваши увлечения-->
+
+                <div class="form-group">
+                    <label for="Hobbies" class="col-sm-2 col-sm-offset-3 control-label">Ваши увлечения</label>
+                    <div class="col-sm-3 checkbox">
+                        <label><input type="checkbox" />Спорт</label>
+                    </div>
+
+                    <label for="Hobbies" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3 checkbox">
+                        <label><input type="checkbox" />Музыка</label>
+                    </div>
+
+                    <label for="Hobbies" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3 checkbox">
+                        <label><input type="checkbox" />Вязание</label>
+                    </div>
+
+                    <label for="Hobbies" class="col-sm-2 col-sm-offset-3 control-label"></label>
+                    <div class="col-sm-3 checkbox">
+                        <label><input type="checkbox" />Вышивание</label>
+                    </div>
+                </div>
+
+                <!--Откуда Вы о нас узнали?-->
+
+                <div class="form-group">
+                    <label for="how_did_you_know" class="col-sm-3 col-sm-offset-2 control-label">Откуда Вы о нас узнали?</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="HowKnow" id="how_did_you_know" class="form-control" list="WhoWhere" />
+                        <datalist id="WhoWhere">
+                            <option value="Друзья">Друзья</option>
+                            <option value="Интернет">Интернет</option>
+                            <option value="Газеты">Газеты</option>
+                            <option value="Журналы">Журналы</option>
+                            <option value="Телевидение">Телевидение</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <small class="text-center help-block muted">* - поля, обязательные для заполнения</small>
+
+                <!--Кнопки-->
+
+                <div class="col-sm-offset-4">
+                    <button type="submit" value="submit" class="btn btn-primary">Отправить</button>
+                    <button type="reset" value="" class="btn btn-primary">Очистить</button>
+                    <button type="button" value="" class="btn btn-primary">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
