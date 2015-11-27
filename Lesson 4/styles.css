@@ -1,0 +1,455 @@
+﻿@import url('reset.css');
+/*mixins*/
+body {
+  background-color: #dfdfdf;
+}
+body,
+a {
+  color: white;
+}
+/*kuku*/
+.kuku {
+  visibility: hidden;
+}
+.box_4,
+.box_7,
+.box_10,
+.box_11,
+.box_12,
+.box_13 {
+  background-color: #757575;
+}
+.box_51,
+.box_61,
+.box_81,
+.box_91 {
+  background-color: #dfdfdf;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 60px;
+  background-color: white;
+}
+header,
+article,
+footer {
+  margin: 0;
+  clear: both;
+}
+header,
+footer {
+  padding: 25px 0;
+}
+h3,
+p,
+a {
+  font-family: tahoma;
+}
+header {
+  height: 115px;
+  border-bottom: 1px solid black;
+  margin-bottom: 25px;
+}
+header .box_1,
+header .box_2,
+header .box_3 {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header .box_1 div,
+header .box_2 div,
+header .box_3 div {
+  height: 115px;
+  background-color: #757575;
+}
+header .box_1,
+header .box_2 {
+  padding-right: 25px;
+}
+.box_1 {
+  width: 15%;
+}
+.box_2 {
+  width: 30%;
+}
+.box_3 {
+  width: 55%;
+}
+.box_3 p {
+  float: none;
+  text-align: right;
+  margin: 0 20px 5px;
+}
+div,
+section,
+aside,
+article,
+nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h3 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-shadow: 3px 3px 3px black;
+  /*no vendor prefix*/
+  font-size: 1.4em;
+}
+aside {
+  position: relative;
+  display: block;
+  float: left;
+  width: 20%;
+  height: 835px;
+}
+aside .box_7 {
+  position: absolute;
+  height: 130px;
+  width: 100%;
+  bottom: 0;
+}
+aside .box_4 ul {
+  position: relative;
+  list-style-type: none;
+  padding: 10px 30px 0 10px;
+}
+aside .box_4 ul li {
+  position: relative;
+  left: 5px;
+  top: -20px;
+  padding: 3px 0;
+}
+aside .box_4 ul li a {
+  text-decoration: none;
+}
+aside .box_4 ul li a a:hover {
+  text-decoration: underline;
+}
+section {
+  width: 80%;
+  float: left;
+}
+section article {
+  margin: 0;
+}
+section article .box_51,
+section article .box_81,
+section article .box_91 {
+  height: 210px;
+}
+section article .box_61 {
+  height: 170px;
+}
+section article .box_5,
+section article .box_6,
+section article .box_8,
+section article .box_9 {
+  padding: 0 0 25px 20px;
+}
+section article .box_6 {
+  width: 20%;
+  float: left;
+}
+section article .box_8,
+section article .box_9 {
+  width: 50%;
+  float: left;
+}
+section article .box_8 p,
+section article .box_9 p {
+  color: black;
+  margin: -10px 0 0;
+  line-height: 1.5;
+  word-break: break-all;
+  /*no Opera*/
+  padding: 0 15px;
+}
+section article .box_8 p span,
+section article .box_9 p span {
+  font-weight: bold;
+}
+footer {
+  margin-top: 25px;
+  border-top: 1px solid grey;
+  height: 200px;
+}
+footer nav {
+  width: 33.3333333%;
+  float: left;
+  padding-right: 25px;
+}
+footer nav .box_10,
+footer nav .box_11 {
+  height: 200px;
+}
+footer nav .box_10 ul {
+  position: relative;
+  padding: 0 20px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+footer nav .box_10 ul li {
+  margin: 0 0 5px;
+}
+footer nav .box_10 ul li a {
+  text-decoration: none;
+}
+footer nav .box_10 ul li a a:hover {
+  text-decoration: underline;
+}
+footer .box_11 ul {
+  padding: 0 35px;
+}
+footer .box_11 ul li {
+  list-style-type: square;
+  margin: 0 0 5px;
+}
+footer .box_11 ul li a {
+  text-decoration: none;
+}
+footer .box_12 {
+  margin-bottom: 20px;
+}
+footer .box_12_13 {
+  height: 200px;
+  padding-right: 0;
+}
+footer .box_12,
+footer .box_13 {
+  height: 90px;
+}
+footer .box_13 {
+  position: relative;
+  clear: both;
+}
+ul {
+  position: relative;
+  list-style-type: none;
+}
+/*------------------<768-------------*/
+@media screen and (max-width: 768px) {
+  a,
+  p {
+    font-size: small;
+  }
+  .wrapper {
+    min-width: 382px;
+    width: 100%;
+    padding: 0 3px;
+    margin: 0;
+  }
+  header,
+  footer {
+    margin: 0;
+    padding: 5px 0;
+  }
+  header {
+    height: 235px;
+    margin-bottom: 5px;
+  }
+  header .box_1 {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    padding-bottom: 5px;
+  }
+  header .box_2,
+  header .box_3 {
+    width: 50%;
+    float: left;
+  }
+  header .box_2 {
+    padding-right: 5px;
+  }
+  header .box_3 p {
+    margin: 5px 10px 0 0;
+    padding: 2px 0;
+  }
+  article aside {
+    width: 100%;
+    height: 120px;
+    clear: both;
+  }
+  article aside .box_4 {
+    min-height: 120px;
+  }
+  article aside .box_4 ul {
+    padding: 10px 5px;
+  }
+  article aside .box_4 ul li {
+    margin: 0;
+    padding: 3px;
+    float: left;
+  }
+  article aside .box_7 {
+    display: none;
+  }
+  section {
+    width: 100%;
+  }
+  section article {
+    width: 100%;
+  }
+  section article .box_5 {
+    width: 100%;
+    padding: 0 0 5px 0;
+    margin-top: 5px;
+  }
+  section article .box_6 {
+    width: 200px;
+    float: left;
+    padding: 0 5px 5px 0;
+  }
+  section article .box_8,
+  section article .box_9 {
+    width: 50%;
+  }
+  section article .box_8 {
+    padding: 0 5px 5px 0;
+  }
+  section article .box_9 {
+    padding: 0 0 5px;
+  }
+  section article .box_81,
+  section article .box_91 {
+    height: auto;
+  }
+  footer {
+    height: 390px;
+    padding-top: 5px;
+  }
+  footer :first-child {
+    padding-right: 5px;
+  }
+  footer :last-child {
+    width: 100%;
+    clear: both;
+  }
+  footer nav {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  footer .box_10 {
+    padding: 0 5px 0 0;
+  }
+  footer .box_12 {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .box_7 {
+    display: none;
+  }
+}
+/*--------------768-1200------------*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
+  header,
+  footer {
+    margin: 0;
+    padding: 15px 0;
+  }
+  header {
+    height: 245px;
+    margin-bottom: 15px;
+  }
+  header .box_1 {
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+    padding-bottom: 15px;
+  }
+  header .box_2,
+  header .box_3 {
+    width: 50%;
+    float: left;
+  }
+  header .box_2 {
+    padding-right: 15px;
+  }
+  article aside {
+    width: 100%;
+    height: 100%;
+    clear: both;
+  }
+  article aside .box_4 {
+    min-height: 120px;
+  }
+  article aside .box_4 ul {
+    padding: 0;
+  }
+  article aside .box_4 ul li {
+    float: left;
+    margin: 0;
+    padding: 15px 0 0 10px;
+  }
+  article aside .box_7 {
+    display: none;
+  }
+  section {
+    width: 100%;
+  }
+  section article {
+    width: 100%;
+  }
+  section article .box_5 {
+    width: 100%;
+    padding: 0 0 15px 0;
+    margin-top: 15px;
+  }
+  section article .box_6 {
+    width: 200px;
+    float: left;
+    padding: 0 15px 15px 0;
+  }
+  section article .box_8,
+  section article .box_9 {
+    width: 50%;
+  }
+  section article .box_8 {
+    padding: 0 15px 15px 0;
+  }
+  section article .box_9 {
+    padding: 0 0 15px;
+  }
+  footer {
+    height: 415px;
+    padding-top: 15px;
+  }
+  footer :first-child {
+    padding-right: 15px;
+  }
+  footer :last-child {
+    width: 100%;
+    clear: both;
+  }
+  footer nav {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  footer .box_10 {
+    padding: 0 15px 0 0;
+  }
+}
+/*-------------lg-----1200px<-------------*/
+@media screen (min-width: 1200px) {
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
