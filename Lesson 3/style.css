@@ -1,0 +1,282 @@
+﻿@import url('reset.css');
+@import url('bootstrap_5_col.css');
+
+.container {
+    padding: 0 40px;
+    background-color: white;
+}
+
+.container-fluid, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding: 0;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+body, a {
+    color: white;
+}
+
+.row {
+    margin: 0;
+}
+
+.box_1, .box_2 {
+    padding-right: 15px;
+}
+
+.box_4 {
+    height: 785px;
+}
+
+.box_51, .box_81, .box_91 {
+    height: 200px;
+}
+
+.box_5, .box_6 {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.box_61 {
+    height: 170px;
+}
+
+.box_7 {
+    position: absolute;
+    height: 130px;
+    bottom: 0;
+}
+
+.box_8, .box_9 {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+    .box_8 p, .box_9 p {
+        padding: 0 15px;
+        color: #706d6d;
+    }
+
+p span {
+    color: black;
+}
+
+.box_10, .box_11 {
+    padding-right: 20px;
+}
+
+    .box_10 ul {
+        padding: 0 5px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+       .box_10 ul li{
+           margin: 0;
+           padding-bottom: 5px;
+           position: relative;
+           left: 10px;
+           top: 0;
+       } 
+
+    .box_11 ul {
+        padding: 15px 30px;
+    }
+
+        .box_11 ul li {
+            list-style-type: square;
+            margin: 0 0 5px;
+        }
+
+li a {
+    text-decoration: none;
+}
+
+.box_12, .box_13 {
+    height: 90px;
+}
+
+.box_13 {
+    position: absolute;
+    bottom: 0;
+}
+
+.pull-right p {
+    position: relative;
+    margin: 0 20px 3px 0;
+    text-align: right;
+}
+
+.page-header {
+    border-bottom: 1px solid grey;
+    margin: 15px 0;
+    padding-bottom: 20px;
+}
+
+.page-footer {
+    border-top: 1px solid grey;
+    padding: 20px 0;
+}
+
+.text_decor_underline {
+    text-decoration: underline;
+}
+
+.header-height {
+    height: 100px;
+}
+
+.footer-height {
+    height: 200px;
+    border-top: 1px solid grey;
+}
+
+h3 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 1.3em;
+    text-shadow: 3px 3px 3px black;
+}
+
+.gray-box {
+    background-color: #757575;
+}
+
+.lightgray-box {
+    background-color: #dfdfdf;
+}
+
+ul {
+    position: relative;
+    list-style-type: none;
+}
+
+    ul li {
+        margin: 10px 5px;
+        position: relative;
+        left: 5px;
+        top: -20px;
+    }
+
+/*------------------<768-------------*/
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: small;
+    }
+
+    .box_1 {
+        width: 120px;
+        margin: 0 auto;
+        padding: 0 15px 15px 0;
+        float: none;
+    }
+
+    .box_2 {
+        float: left;
+        padding-right: 15px;
+    }
+
+    .box_2, .box_3 {
+    }
+
+    .box_4 {
+        height: 100%;
+    }
+
+    .box_5 {
+        padding: 15px 0;
+    }
+
+    .box_6 {
+        width: 95px;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+    .box_8, .box_9 {
+        padding-left: 0;
+    }
+
+    .box_10, .box_11 {
+        padding: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .box_7 {
+        display: none;
+    }
+}
+
+/*--------------768-1200------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .box_1 {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .box_1, .box_4, .box_10, .box_11 {
+        padding-bottom: 15px;
+    }
+
+    .box_1, .box_2 {
+        padding-right: 15px;
+    }
+
+    .box_4 {
+        height: 100%;
+    }
+
+    .box_5 {
+        padding: 0;
+    }
+
+    .box_6 {
+        width: 200px;
+        float: left;
+        padding: 0 15px 0 0;
+    }
+
+    .box_6, .box_8 {
+        padding-left: 0;
+    }
+
+    .box_7 {
+        visibility: hidden;
+    }
+
+    .box_9, .box_11 {
+        padding-left: 15px;
+    }
+
+    .box_10, .box_11 {
+        padding-right: 0;
+    }
+
+    .box_12, .box_13 {
+        clear: both;
+    }
+}
+
+/*-------------md-----992-and-up-------------*/
+/*@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+}*/
+
+
+/*-------------lg-----1200px<-------------*/
+@media screen (min-width: 1200px) {
+    .container {
+        width: 5%;
+        margin: 0 auto;
+    }
+}
