@@ -10,13 +10,7 @@ function compare(arr1, arr2) {
 
     // array comparison
     function isEqual(arr1, arr2) {
-
-        if ((arr1.sort().toString() === arr2.sort().toString()) && (arr1.length == arr2.length)) {
-            return true;
-        }
-        else {
-            return false
-        }
+        return  ((arr1.sort().toString() === arr2.sort().toString()) && (arr1.length == arr2.length)) 
     }
     console.log('Проверка на равенство длины массивов и равенство элементов: ' + isEqual(arr1, arr2));
 
@@ -31,14 +25,14 @@ function compare(arr1, arr2) {
     console.log('Сумма второго массива: ' + sum2);
 
 
-
     function bigger() {
         if (sum1 > sum2) {
-            ((bigger = [arr1.toString], result = true), true);
+            ((bigger = arr1.toString(), result = true), true);
         }
         if (sum1 < sum2) {
-            ((bigger = [arr2.toString], result = false), false);
+            ((bigger = arr2.toString(), result = false), false);
         }
+        return bigger;
     }
 
     return {
